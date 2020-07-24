@@ -71,6 +71,11 @@ export class AppComponent implements OnInit {
     modeling.updateProperties(this.element, {
       'custom-property': value
     });
+    // 节点改变颜色
+    modeling.setColor(this.element, {
+      fill: 'yellow',
+      stroke: 'orange'
+    })
   }
   /**
   * 下载xml/svg

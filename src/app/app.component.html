@@ -2,7 +2,21 @@
 (onSave)=handleSave() (onUndo)=handleUndo() (onZoomIn)=handleZoom(0.1)
 (onZoomOut)=handleZoom(-0.1) (onZoomReset)=handleZoom()></app-editing-tools>
 <div class="row" style="width:100%; height: 600px">
-  <div id="el" style="float:left;width:70%;height:100%">
+  <div id="el" style="float:left;width:75%;height:100%">
   </div>
-  <div id="js-properties-panel" style="float:right;width:25%;"></div>
+  <div id="js-properties-panel" style="float:right;width:20%;height: 900px;overflow: scroll"></div>
+</div>
+<div class="row" style="width:100%; height: 300px">
+  <form role="form">
+    <div class="form-group">
+      <label for="name">节点属性</label>
+      <select #select class="form-control" (change)="selected(select.value)">
+        <option  value='type1'>类型1</option>
+        <option  value='type2'>类型2</option>
+        <option  value='type3'>类型3</option>
+        <option  value='type4'>类型4</option>
+      </select>
+    </div>
+    <button type="button" (click)="handleSave()" class="btn btn-default">保存</button>
+  </form>
 </div>
