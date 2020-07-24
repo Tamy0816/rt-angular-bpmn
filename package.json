@@ -20,8 +20,13 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "bpmn-js": "^7.2.1",
+    "bpmn-js-properties-panel": "^0.34.0",
+    "camunda-bpmn-moddle": "^4.4.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.2.0",
+    "timers": "^0.1.1",
+    "xml2js": "^0.4.23",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
